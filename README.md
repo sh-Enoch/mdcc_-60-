@@ -42,7 +42,7 @@ I’ve set myself a challenge to spend **at least 1 hour per day** focusing sole
 
 If you want to join me on this challenge, here's how you can participate:
 
-1. **Trello Board:** Follow along with my progress, check out daily tasks, and stay organized by joining my Trello board [Django Journey Trello Board](#).
+1. **Trello Board:** Follow along with my progress, check out daily tasks, and stay organized by joining my Trello board https://trello.com/b/gmswuJNq.
 2. **GitHub:** Check out my daily commits and progress on GitHub.
 3. **Community:** Feel free to share your own experiences, ask questions, and connect with other learners. Let’s create a space to help each other grow and succeed.
 
