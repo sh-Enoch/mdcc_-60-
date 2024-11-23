@@ -11,3 +11,6 @@ def home(request):
 def blog(request):
     
     return HttpResponse('This is the blog page.')
+
+def about(request):
+    return render(request, 'blogpost/about.html')
