@@ -14,3 +14,6 @@ def blog(request):
 
 def about(request):
     return render(request, 'blogpost/about.html')
+
+def popular(request):
+    return render(request, 'blogpost/popular.html')
