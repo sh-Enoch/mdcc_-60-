@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
-
+from .models import BlogPost    
 # Create your views here.
 
 def home(request):
@@ -16,4 +16,9 @@ def about(request):
     return render(request, 'blogpost/about.html')
 
 def popular(request):
-    return render(request, 'blogpost/popular.html')
+    blogs  = BlogPost.objects.all()
+    context = {
+        "blogs": blogs,
+    }
+
+    return render(request, 'blogpost/popular.html', context)
