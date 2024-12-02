@@ -22,3 +22,11 @@ def popular(request):
     }
 
     return render(request, 'blogpost/popular.html', context)
+
+
+def profile(request):
+    return render(request, 'blogpost/profile.html')
+
+
+def new_blog(request):
+    return render(request, 'blogpost/new_blog.html')
