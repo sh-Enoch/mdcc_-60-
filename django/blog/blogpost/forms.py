@@ -1,4 +1,4 @@
-from .models import BlogPost, Category
+from .models import BlogPost, Category, Author
 from  django import forms
 
 
@@ -35,3 +35,13 @@ class BlogPostForm(forms.ModelForm):
                 'placeholder': 'Category' 
             }),     
 }
+        
+
+class AuthorForm(forms.ModelForm):
+    class Meta:
+        model = Author
+        fields = (
+            'user',
+            'bio',
+            'profile_pic',
+        )

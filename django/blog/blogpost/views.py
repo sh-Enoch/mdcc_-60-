@@ -1,7 +1,18 @@
-from django.shortcuts import render, HttpResponse, redirect
+from django.shortcuts import render, HttpResponse, redirect, reverse
 from .models import BlogPost    
-from .forms import BlogPostForm
+from .forms import BlogPostForm, AuthorForm
+from django.views.generic import CreateView
+from django.contrib.auth.forms import UserCreationForm
 # Create your views here.
+
+
+
+class SignUpView(CreateView):
+    form_class = UserCreationForm
+    template_name = 'registration/signup.html'
+
+    def get_success_url(self):
+        return reverse("login")
 
 def home(request):
     context = {
@@ -26,7 +37,11 @@ def popular(request):
 
 
 def profile(request):
-    return render(request, 'blogpost/profile.html')
+    author_form =  AuthorForm()
+    context ={
+        "form": author_form,
+    }
+    return render(request, 'blogpost/profile.html', context)
 
 
 def new_blog(request):

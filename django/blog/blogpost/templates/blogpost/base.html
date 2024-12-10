@@ -10,7 +10,7 @@
     <div>
         <div class="flex justify-end gap-5">  
         
-            <a href="{% url 'profile' %}" class="p-4 rounded bg-white text-indigo-500 shadow-md flex items-right justify-center">  
+            <a href="{% url 'blogpost:profile' %}" class="p-4 rounded bg-white text-indigo-500 shadow-md flex items-right justify-center">  
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2"  fill="none"viewBox="0 0 24 24"stroke="currentColor">
                     <path stroke-linecap="round"troke-linejoin="round"stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg> Profile  
@@ -25,19 +25,19 @@
 <div class="fixed bottom-0 z-50 w-full left-1/2 transform -translate-x-1/2 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600">
     <div class="w-full">
         <div class="grid w-full grid-cols-3 gap-1 p-2 mx-auto my-auto bg-gray-100 rounded-lg dark:bg-gray-600" role="group">
-            <a href="{% url 'new_blog' %}" type="button" class="p-5 py-1.5 text-lg font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-300 rounded-lg">
+            <a href="{% url 'blogpost:new_blog' %}" type="button" class="p-5 py-1.5 text-lg font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-300 rounded-lg">
                 New
             </a>
-            <a href="{% url 'popular' %}" type="button" class="p-5 py-1.5 text-lg font-medium text-center hover:bg-gray-200 dark:text-white dark:hover:bg-gray-300 rounded-lg">
+            <a href="{% url 'blogpost:popular' %}" type="button" class="p-5 py-1.5 text-lg font-medium text-center hover:bg-gray-200 dark:text-white dark:hover:bg-gray-300 rounded-lg">
                 Popular
             </a>
-            <a href="{% url 'about' %}" type="button" class="p-5 py-1.5 text-lg font-medium  text-center text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-lg">
+            <a href="{% url 'blogpost:about' %}" type="button" class="p-5 py-1.5 text-lg font-medium  text-center text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-lg">
                 About
             </a>
         </div>
     </div>
     <div class="grid h-full max-w-lg grid-cols-5 mx-auto">
-        <a href="{% url 'home' %}" data-tooltip-target="tooltip-home" type="button" class="inline-flex flex-col items-center justify-center p-4 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+        <a href="{% url 'blogpost:home' %}" data-tooltip-target="tooltip-home" type="button" class="inline-flex flex-col items-center justify-center p-4 hover:bg-gray-50 dark:hover:bg-gray-800 group">
             <svg class="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                 <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
             </svg>
